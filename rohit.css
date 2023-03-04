@@ -1,0 +1,353 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'open Sans';
+    background-color: black;
+    color: aliceblue;
+}
+
+::selection{
+    background-color: #e70634;
+    color: #080808;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+
+li{
+    list-style: none;
+
+}
+a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 1rem;
+    transition: all ease 0.3s;
+
+}
+button{
+    /* text-decoration: none; */
+    color: whitesmoke;
+    /* font-size: 1rem; */
+    transition: all ease 0.3s;
+
+}
+
+ul button:hover{
+    color: #e70634;
+    font-size: 1.25rem;
+    transition: all ease 0.3s;
+}
+ul a:hover{
+    color: #e70634;
+    font-size: 1.25rem;
+    transition: all ease 0.3s;
+}
+
+header{
+    position: relative;
+    padding: 0 2rem;
+}
+
+.navbar{
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;;
+    margin: 0 auto;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;   
+
+}
+
+.action_btn{
+    background-color: #e70634;
+    color: whitesmoke;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight : bold;
+    cursor: pointer;
+
+}
+
+.Add-new-btn{
+    background-color: #e70634;
+    color: whitesmoke;
+    padding: 1rem 2rem;
+    border: none;
+    float: right;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+    margin-right: 20px;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight : bold;
+    cursor: pointer;
+}
+/* div .toggle_btn{
+    color: whitesmoke;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+
+} */
+
+/* .navbar .menu-btn{
+    display: none;
+} */
+
+
+.action_btn:hover{
+    scale: 1.5rem;
+}
+
+.navbar .links{
+    display: flex;
+    gap: 2rem;
+}
+.navbar .logo a{
+    font-size: 22px;
+    font-family: Monoton;
+    color: #e70634;
+    letter-spacing: .5px;
+}
+
+/* .header{
+    background-color: aliceblue;
+    /* padding: 10px; 
+} */
+ 
+header.hed-two{
+    /* margin-left: 60px; */
+    height: 130px;
+
+} 
+.hed-massage{
+    margin-top: 50px;
+    margin-left:80px ;
+    margin-right:80px ;
+    
+}
+.main-body{
+    padding-left: 20px;
+}
+
+.container{
+    width: 90%;
+    height: 100%;
+    padding: 5%;
+}
+
+#new-task-form{
+    background-color: rgb(255, 255, 255,0.2);
+    border-radius: 20px;
+}
+
+#new-task-submit{
+    float:right;
+    background-color: #e70634;
+}
+
+#new-task-form input{
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 24px 20px;
+    font-size: 20px;
+    color: #cac7ff;
+}
+
+.image{
+    border-radius: 50%;
+}
+.div-image{
+    /* background-color: yellow; */
+    margin-right: 90%;
+}
+.name{
+    font-size: 20px;
+    padding: 10px 20px;
+
+    justify-content: center;
+}
+.sub-text{
+    color: grey;
+    /* margin-right: -10px; */
+    font-size: px;
+}
+
+/* action Btn  */
+
+.active-btn{
+    margin-right:10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 11px;
+}
+.line{
+    padding-top:1px;
+    background-color: grey;
+    margin-top: 10px;
+    margin-right: 30px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.mess{
+    padding: 10px 20px;
+    /* background-color: #cac7ff; */
+    /* margin-left: ; */
+}
+/* Responsive design  */
+@media (max-width: 992px) {
+    .navbar .links{
+        display: none;
+    }
+    .logo a{
+        /* padding-left: auto; */
+        /* margin-left: 50%; */
+        justify-content: center;
+        text-align: center;
+    }
+    
+    /* .navbar .menu-btn{
+        display: block;
+    } */
+
+    .image{
+        border-radius: 50%;
+        height: 60px;
+        width: 60px;
+    }   
+    .sub-text{
+        font-size: 10px;
+    }
+    .name{
+        font-size: 20px;
+        padding: 5px 2px;
+    }
+    .hed-massage{
+        margin-top: 10px;
+        margin-left: 80px;
+        /* margin-right: 80px; */
+    }
+    .hed-massage table{
+        margin-left: 40px;
+    }
+    /* td .name{} */
+}
+
+@media (max-width:547px){
+
+    .Add-new-btn{
+        background-color: #4fbe58f7;
+        color: whitesmoke;
+        padding: 0.5rem 1rem;
+        border: none;
+        float: right;
+        justify-content: center;
+        text-align: center;
+        margin-top: 15px;
+        margin-right: 20 px;
+        outline: none;
+        border-radius: 15px;
+        font-size: 0.8rem;
+        font-weight : bold;
+        cursor: pointer;
+    }
+    #new-task-form input{
+        background: transparent;
+        flex: 1;
+        border: 0;
+        outline: none;
+        padding: 24px 20px;
+        font-size: 13px;
+        color: #cac7ff;
+    }
+
+    .image{
+        border-radius: 50%;
+        height: 60px;
+        width: 60px;
+    }   
+    .sub-text{
+        font-size: 10px;
+    }
+    .name{
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+    .hed-massage{
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width:447px){
+
+    .Add-new-btn{
+        background-color: #e70634;
+        color: whitesmoke;
+        padding: 0.5rem 1rem;
+        border: none;
+        float: right;
+        justify-content: center;
+        text-align: center;
+        margin-top: 20px;
+        margin-right: 20 px;
+        outline: none;
+        border-radius: 20px;
+        font-size: 0.6rem;
+        font-weight : bold;
+        cursor: pointer;
+    }
+    #new-task-form input{
+        background: transparent;
+        flex: 1;
+        border: 0;
+        outline: none;
+        padding: 24px 20px;
+        font-size: 13px;
+        color: #cac7ff;
+    }
+}
+
+
+@media (max-width:397px){
+
+    .Add-new-btn{
+        background-color: #e70634;
+        color: whitesmoke;
+        padding: 0.5rem 1rem;
+        border: none;
+        float: right;
+        justify-content: center;
+        text-align: center;
+        margin-top: 20px;
+        margin-right: 20px;
+        outline: none;
+        border-radius: 20px;
+        font-size: 0.6rem;
+        font-weight : bold;
+        cursor: pointer;
+    }
+    #new-task-form input{
+        background: transparent;
+        flex: 1;
+        border: 0;
+        outline: none;
+        padding: 24px 20px;
+        font-size: 10px;
+        color: #cac7ff;
+    }
+}
+
+/* @media(max-width:700){
+   
+} */

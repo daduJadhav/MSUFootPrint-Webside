@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="rohit.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="navbar">
+            <div class="logo"><a href="#">Mackamlin.hd</a></div>
+            <ul class="links">
+                <li><a href="">HOME</a></li>
+                <li><a href="">ADD</a></li>
+                <!-- <li><a href="">DELEAT</a></li> -->
+                <li><button onclick="MAR()" id="">MARK ALL SEEN</button></li>
+            </ul>
+            <a href="#" class="action_btn">Get Started</a>
+            <!-- <div class="toggle_btn">
+                <i class="fa-light fa-bars"></i>
+            </div> -->
+
+            <!-- <input type="checkbox" class="menu-btn" id="menu-btn">
+            <label for="menu-btn" class="menu-icon">
+                <span class="nav-icon"></span>
+            </label> -->
+        </div>
+    </header>
+    <header class="hed-two">
+        <!-- <h1 class="heading-name">Adding Panel <span class="line"></span></h1> -->
+        <div class="container">
+            <form id = "new-task-form">
+                <input 
+                type="text"
+                id="new-task-input"
+                placeholder="What Do you want to inter...?">
+    
+                <!-- <input type="submit"
+                id="new-task-submit"
+                value="Add Massage" /> -->
+                <a href="#" class="Add-new-btn">Get Started</a>
+                
+            </form>
+        </div>
+    </header>
+
+    <header class="hed-massage">
+        <h3 style="color: whitesmoke; font-size: 30px; margin-bottom: 20px;">Notes... <span style="padding-left: 3px; background-color: #e70634;"> </span></h3>
+
+        <ol class="ol" style="margin-left: 40px;">
+            <li>👉  Single click for seen...</li>
+            <br>
+            <li>👉  Double click for Un-seen</li>
+            <br>
+            <li>👉  Most of the Function are Dynamic and are not in use... But it satisfy all the needs of FootPrint</li>
+            <br>
+            <br>
+        </ol>
+
+
+    </header>
+
+    <header class="hed-massage">
+        <h3 style="color: whitesmoke; font-size: 30px; margin-bottom: 20px;">Message... <span style="padding-left: 3px; background-color: #e70634;"> </span></h3>
+        
+
+        <!-- Table 1 -->
+        <table class="table1">
+            <td>
+                <div class="div-image">
+                    <span><img src="1.png" alt="image" class="image" height="70px" width="70px"></span>
+                </div>        
+            </td>
+            <td>
+                <div class="mess">
+                    <b><span class="name">Rohit</span></b>
+                    
+                </div>
+            </td>
+            <td>
+                <span class="sub-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis pariatur fugiat dolorem reprehenderit.</span>
+            </td>
+            <td>
+                <span><button class="action_btn active-btn" onclick="seen1()" ondblclick="seen1un()" id="seen1">SEEN</button></span>
+                <!-- <span><button class="action_btn active-btn" onclick="del()">DEL</button></span> -->
+            </td>
+        </table>
+        <div class="line"></div>
+
+
+        <!-- Table 2 -->
+        <table class="table1">
+            <td>
+                <div class="div-image">
+                    <span><img src="2.png" alt="image" class="image" height="70px" width="70px"></span>
+                </div>        
+            </td>
+            <td>
+                <div class="mess">
+                    <b><span class="name">Adaiti</span></b>
+                    
+                </div>
+            </td>
+            <td>
+                <span class="sub-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis pariatur fugiat dolorem reprehenderit.</span>
+            </td>
+            <td>
+                <span><button class="action_btn active-btn" onclick="seen2()" ondblclick="seen2un()" id="seen2">SEEN</button></span>
+                <!-- <span><button class="action_btn active-btn" onclick="del()">DEL</button></span> -->
+            </td>
+        </table>
+        <div class="line"></div>
+
+
+        <!-- Table 3 -->
+        <table class="table1">
+            <td>
+                <div class="div-image">
+                    <span><img src="3.png" alt="image" class="image" height="70px" width="70px"></span>
+                </div>        
+            </td>
+            <td>
+                <div class="mess">
+                    <b><span class="name">Nehaa</span></b>
+                    
+                </div>
+            </td>
+            <td>
+                <span class="sub-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis pariatur fugiat dolorem reprehenderit.</span>
+            </td>
+            <td>
+                <span><button class="action_btn active-btn" onclick="seen3()" ondblclick="seen3un()" id="seen3">SEEN</button></span>
+                <!-- <span><button class="action_btn active-btn" onclick="del()">DEL</button></span> -->
+            </td>
+        </table>
+        <div class="line"></div>
+
+
+        <!-- Table 4 -->
+        <table class="table1">
+            <td>
+                <div class="div-image">
+                    <span><img src="4.png" alt="image" class="image" height="70px" width="70px"></span>
+                </div>        
+            </td>
+            <td>
+                <div class="mess">
+                    <b><span class="name">Mahek</span></b>
+                    
+                </div>
+            </td>
+            <td>
+                <span class="sub-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis pariatur fugiat dolorem reprehenderit.</span>
+            </td>
+            <td>
+                <span><button class="action_btn active-btn" onclick="seen4()" ondblclick="seen4un()" id="seen4">SEEN</button></span>
+                <!-- <span><button class="action_btn active-btn" onclick="del()">DEL</button></span> -->
+            </td>
+        </table>
+        <div class="line"></div>
+
+        <!-- table 5 -->
+        <table class="table1">
+            <td>
+                <div class="div-image">
+                    <span><img src="2.png" alt="image" class="image" height="70px" width="70px"></span>
+                </div>        
+            </td>
+            <td>
+                <div class="mess">
+                    <b><span class="name">Krisha</span></b>
+                    
+                </div>
+            </td>
+            <td>
+                <span class="sub-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis pariatur fugiat dolorem reprehenderit.</span>
+            </td>
+            <td>
+                <span><button class="action_btn active-btn" onclick="seen5()" ondblclick="seen5un()" id="seen5">SEEN</button></span>
+                <!-- <span><button class="action_btn active-btn" onclick="del()">DEL</button></span> -->
+            </td>
+        </table>
+        <div class="line"></div>
+
+        <!-- table 6 -->
+        <table class="table1">
+            <td>
+                <div class="div-image">
+                    <span><img src="th (3).jpeg" alt="image" class="image" height="70px" width="70px"></span>
+                </div>        
+            </td>
+            <td>
+                <div class="mess">
+                    <b><span class="name">Jayesh</span></b>
+                    
+                </div>
+            </td>
+            <td>
+                <span class="sub-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis pariatur fugiat dolorem reprehenderit.</span>
+            </td>
+            <td>
+                <span><button class="action_btn active-btn" onclick="seen6()" ondblclick="seen6un()" id="seen6">SEEN</button></span>
+                <!-- <span><button class="action_btn active-btn" onclick="del()">DEL</button></span> -->
+            </td>
+        </table>
+        <div class="line"></div>
+
+
+        <!-- table 7 -->
+        <table class="table1">
+            <td>
+                <div class="div-image">
+                    <span><img src="3.png" alt="image" class="image" height="70px" width="70px"></span>
+                </div>        
+            </td>
+            <td>
+                <div class="mess">
+                    <b><span class="name">Manasi</span></b>
+                    
+                </div>
+            </td>
+            <td>
+                <span class="sub-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis pariatur fugiat dolorem reprehenderit.</span>
+            </td>
+            <td>
+                <span><button class="action_btn active-btn" onclick="seen7()" ondblclick="seen7un()" id="seen7">SEEN</button></span>
+                <!-- <span><button class="action_btn active-btn" onclick="del()">DEL</button></span> -->
+            </td>
+        </table>
+        <div class="line"></div>
+
+    </header>
+
+    </header>
+
+    
+
+    <script src="rohit-javascript.js"></script>
+</body>
+</html>
